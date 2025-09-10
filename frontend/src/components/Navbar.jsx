@@ -66,7 +66,9 @@ const Navbar = () => {
 						</button>
 					</span>
 					<span>
-						<i className="ri-user-line rounded-full cursor-pointer"></i>
+						<Link to="/login">
+							<i className="ri-user-line rounded-full cursor-pointer"></i>
+						</Link>
 					</span>
 				</div>
 			</nav>
