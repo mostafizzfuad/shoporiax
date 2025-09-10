@@ -1,14 +1,1 @@
 @import "tailwindcss";
-
-:root {
-	--container-2xl: 1400px;
-	--container-1200: 1200px;
-	--container-900: 900px;
-
-	--color-primary: #ed3849;
-	--color-primary-dark: #d23141;
-	--color-primary-light: #f4e5ec;
-	--color-text-dark: #0f172a;
-	--color-text-light: #64748b;
-	--color-extra-light: #f8fafc;
-}
