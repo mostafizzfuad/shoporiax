@@ -1,10 +1,23 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 require("dotenv").config();
 const mongoose = require("mongoose");
 const cors = require("cors");
+
+// middleware
+app.use(express.json());
+app.use(
+	cors({
+		origin: "http://localhost:5173/",
+		credentials: true,
+	})
+);
+
+// routes
+const userRouter = require("./src/users/user.route");
+app.use("/api/auth", userRouter);
 
 // connect to MongoDB
 async function main() {
@@ -14,10 +27,6 @@ main()
 	.then(() => console.log("MongoDB connected"))
 	.catch((err) => console.error("MongoDB connection error:", err));
 
-app.get("/", (req, res) => {
-	res.send("Hello World!");
-});
-
-app.listen(port, () => {
-	console.log(`Shoporiax is running on port ${port}`);
+app.listen(PORT, () => {
+	console.log(`Server running on http://localhost:${PORT}`);
 });
