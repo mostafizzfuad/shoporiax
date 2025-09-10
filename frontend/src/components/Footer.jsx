@@ -1,5 +1,3 @@
-import React from "react";
-
 import instagram1 from "../assets/instagram-1.jpg";
 import instagram2 from "../assets/instagram-2.jpg";
 import instagram3 from "../assets/instagram-3.jpg";
@@ -24,7 +22,7 @@ const Footer = () => {
 						<span>
 							<i className="ri-mail-fill"></i>
 						</span>
-						support@shophriax.com
+						support@shoporiax.com
 					</p>
 					<p>
 						<span>
@@ -53,16 +51,16 @@ const Footer = () => {
 					<h4>INSTAGRAM</h4>
 					<div className="instagram__grid">
 						<img src={instagram1} alt="Instagram Image" />
-                        <img src={instagram2} alt="Instagram Image" />
-                        <img src={instagram3} alt="Instagram Image" />
-                        <img src={instagram4} alt="Instagram Image" />
-                        <img src={instagram5} alt="Instagram Image" />
-                        <img src={instagram6} alt="Instagram Image" />
+						<img src={instagram2} alt="Instagram Image" />
+						<img src={instagram3} alt="Instagram Image" />
+						<img src={instagram4} alt="Instagram Image" />
+						<img src={instagram5} alt="Instagram Image" />
+						<img src={instagram6} alt="Instagram Image" />
 					</div>
 				</div>
 			</footer>
 			<div className="footer__bar">
-				Copyright &copy; {new Date().getFullYear()} Shophriax. All
+				Copyright &copy; {new Date().getFullYear()} Shoporiax. All
 				rights reserved.
 			</div>
 		</>
