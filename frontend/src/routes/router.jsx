@@ -3,11 +3,13 @@ import App from "../App";
 import Home from "../pages/home/Home";
 import ShopPage from "../pages/shop/ShopPage";
 import CategoryPage from "../pages/category/CategoryPage";
+import ErrorPage from "../components/ErrorPage";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <App />,
+        errorElement: <ErrorPage />,
 		children: [
 			{
 				path: "/",
@@ -19,7 +21,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/categories/:categoryName",
-                element: <CategoryPage />,
+				element: <CategoryPage />,
 			},
 		],
 	},
